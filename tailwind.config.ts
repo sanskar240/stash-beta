@@ -5,5 +5,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite-typography'),
+  ],
 } satisfies Config;

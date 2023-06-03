@@ -2,16 +2,16 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import { stashRouter } from "~/server/api/routers/stash";
 import { api } from "~/utils/api";
+import { useMutation } from "@tanstack/react-query";
 
 
 const Home: NextPage = () => {
 
   const {data} = api.stashes.getAll.useQuery();
-  const deleteSingelNote
-  // const hello = api.example.hello.useQuery({ text: "from tRPC" })
-  
  
+
   return (
     <>
       <Head>

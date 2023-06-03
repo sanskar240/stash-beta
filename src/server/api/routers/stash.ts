@@ -35,6 +35,7 @@ export const stashRouter = createTRPCRouter({
         });
       }catch(error){
         console.log("Server Problems");
+        throw new Error('Failed to delete stash');
       }
     })
     

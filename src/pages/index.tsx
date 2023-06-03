@@ -2,16 +2,16 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-
-
 import { api } from "~/utils/api";
 
 
 const Home: NextPage = () => {
 
   const {data} = api.stashes.getAll.useQuery();
-  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
+  const deleteSingelNote
+  // const hello = api.example.hello.useQuery({ text: "from tRPC" })
+  
+ 
   return (
     <>
       <Head>
@@ -29,6 +29,7 @@ const Home: NextPage = () => {
    <div>
     {item.title}
     {item.description}
+    <button>Delete</button>
    </div>
   ))}
 </div>

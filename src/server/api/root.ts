@@ -10,7 +10,7 @@ import { stashRouter } from "./routers/stash";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-stashes:stashRouter
+stashes:stashRouter,
 });
 
 // export type definition of API
